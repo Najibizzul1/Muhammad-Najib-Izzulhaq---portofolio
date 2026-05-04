@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Najib — Android Developer. Portfolio profesional untuk HR/HRD." />
+  <title>Najib | Android Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════
+       NAVIGATION
+  ═══════════════════════════ -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__logo" href="#hero">NJ.</a>
+      <ul class="nav__links" role="list">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════
+         HERO SECTION
+    ═══════════════════════════ -->
+    <section id="hero" class="hero section-pad">
+      <div class="container">
+
+        <p class="hero__label">Available for Opportunities</p>
+
+        <h1 class="hero__name">Najib<br /><span class="hero__name--thin">Firmansyah.</span></h1>
+
+        <p class="hero__role">Android Developer</p>
+
+        <p class="hero__positioning">
+          Membangun aplikasi Android yang <em>performant</em>, terstruktur, dan berorientasi pada pengalaman pengguna nyata.
+        </p>
+
+        <!-- Code Identity Block -->
+        <div class="code-identity" role="img" aria-label="Code identity: class Najib extends AndroidDeveloper">
+          <pre class="code-block"><code><span class="kw">class</span> <span class="cls">Najib</span> : <span class="cls">AndroidDeveloper</span>() {
+  <span class="kw">val</span> <span class="var">stack</span>  = <span class="str">["Kotlin", "Jetpack Compose", "MVVM"]</span>
+  <span class="kw">val</span> <span class="var">status</span> = <span class="str">"Open to Work"</span>
+  <span class="fn">fun</span> <span class="fn-name">deliver</span>() = <span class="str">"Clean · Scalable · On-Time"</span>
+}</code></pre>
+        </div>
+
+        <div class="hero__cta-group">
+          <a href="#projects" class="btn btn--primary">Lihat Projects</a>
+          <a href="#contact" class="btn btn--ghost">Hubungi Saya</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         SKILLS SECTION
+    ═══════════════════════════ -->
+    <section id="skills" class="skills section-pad section-alt" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-label">02 / Skills</span>
+          <h2 id="skills-heading">Technical Stack</h2>
+        </header>
+
+        <div class="skills__grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Mobile</h3>
+            <ul class="tag-list" role="list">
+              <li class="tag tag--primary">Kotlin</li>
+              <li class="tag tag--primary">Jetpack Compose</li>
+              <li class="tag">Android SDK</li>
+              <li class="tag">XML Layout</li>
+              <li class="tag">Coroutines</li>
+              <li class="tag">Flow</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Architecture</h3>
+            <ul class="tag-list" role="list">
+              <li class="tag tag--primary">MVVM</li>
+              <li class="tag">Clean Architecture</li>
+              <li class="tag">Repository Pattern</li>
+              <li class="tag">Dependency Injection</li>
+              <li class="tag">Hilt</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Tools & Lainnya</h3>
+            <ul class="tag-list" role="list">
+              <li class="tag">Retrofit</li>
+              <li class="tag">Room DB</li>
+              <li class="tag">Firebase</li>
+              <li class="tag">Git</li>
+              <li class="tag">Figma</li>
+              <li class="tag">Postman</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         PROJECTS SECTION
+    ═══════════════════════════ -->
+    <section id="projects" class="projects section-pad" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-label">03 / Projects</span>
+          <h2 id="projects-heading">Bukti Kerja</h2>
+        </header>
+
+        <div class="projects__grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <figure class="project-card__img-wrap">
+              <!--
+                CARA MENAMBAH SCREENSHOT:
+                1. Simpan file gambar di folder: assets/projects/
+                2. Ganti "assets/projects/project-1.png" sesuai nama file Anda
+                3. Gunakan format .png atau .jpg
+              -->
+              <img
+                src="assets/projects/project-1.png"
+                alt="Screenshot aplikasi TaskFlow"
+                class="project-card__img"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Tampilan antarmuka aplikasi TaskFlow</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__number">01</span>
+                <span class="project-card__type">Android App</span>
+              </div>
+              <h3 class="project-card__title">TaskFlow</h3>
+              <p class="project-card__desc">
+                Aplikasi manajemen tugas harian dengan fitur prioritas, reminder, dan sinkronisasi cloud. Dibangun dengan Jetpack Compose + MVVM + Firebase Firestore.
+              </p>
+              <ul class="tag-list" role="list">
+                <li class="tag">Kotlin</li>
+                <li class="tag">Compose</li>
+                <li class="tag">Firebase</li>
+                <li class="tag">Hilt</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/najib/taskflow" class="link-arrow" target="_blank" rel="noopener noreferrer">
+                  GitHub <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <figure class="project-card__img-wrap">
+              <img
+                src="assets/projects/project-2.png"
+                alt="Screenshot aplikasi MarketKita"
+                class="project-card__img"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Tampilan antarmuka aplikasi MarketKita</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__number">02</span>
+                <span class="project-card__type">Android App</span>
+              </div>
+              <h3 class="project-card__title">MarketKita</h3>
+              <p class="project-card__desc">
+                Platform e-commerce UMKM lokal dengan fitur katalog produk, keranjang belanja, dan integrasi payment gateway Midtrans. Dikembangkan dalam tim 3 orang.
+              </p>
+              <ul class="tag-list" role="list">
+                <li class="tag">Kotlin</li>
+                <li class="tag">Retrofit</li>
+                <li class="tag">Room</li>
+                <li class="tag">Midtrans SDK</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/najib/marketkita" class="link-arrow" target="_blank" rel="noopener noreferrer">
+                  GitHub <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <figure class="project-card__img-wrap">
+              <img
+                src="assets/projects/project-3.png"
+                alt="Screenshot aplikasi WeatherNow"
+                class="project-card__img"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">Tampilan antarmuka aplikasi WeatherNow</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__number">03</span>
+                <span class="project-card__type">Android App</span>
+              </div>
+              <h3 class="project-card__title">WeatherNow</h3>
+              <p class="project-card__desc">
+                Aplikasi cuaca real-time berbasis lokasi menggunakan OpenWeatherMap API. Menerapkan Clean Architecture dengan unit testing mencakup 80%+ coverage.
+              </p>
+              <ul class="tag-list" role="list">
+                <li class="tag">Kotlin</li>
+                <li class="tag">Clean Arch</li>
+                <li class="tag">JUnit</li>
+                <li class="tag">Mockk</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/najib/weathernow" class="link-arrow" target="_blank" rel="noopener noreferrer">
+                  GitHub <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         EXPERIENCE SECTION
+    ═══════════════════════════ -->
+    <section id="experience" class="experience section-pad section-alt" aria-labelledby="experience-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-label">04 / Experience</span>
+          <h2 id="experience-heading">Perjalanan</h2>
+        </header>
+
+        <ol class="timeline" role="list">
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Android Developer Intern</h3>
+                <time class="timeline__date" datetime="2024-07/2024-12">Jul – Des 2024</time>
+              </div>
+              <p class="timeline__company">PT. Teknologi Nusantara · Semarang</p>
+              <p class="timeline__impact">
+                Berkontribusi pada pengembangan fitur <strong>push notification</strong> dan <strong>refaktor modul pembayaran</strong>, yang menurunkan crash rate sebesar 40% berdasarkan laporan Firebase Crashlytics.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Mobile Dev — Bangkit Academy</h3>
+                <time class="timeline__date" datetime="2024-02/2024-06">Feb – Jun 2024</time>
+              </div>
+              <p class="timeline__company">Google · Gojek · Tokopedia · Traveloka</p>
+              <p class="timeline__impact">
+                Lulus program Bangkit 2024 jalur Android. Membangun Capstone Project berupa aplikasi kesehatan yang dipresentasikan di hadapan mentor industri dan berhasil lolos kurasi produk akhir.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">S1 Informatika</h3>
+                <time class="timeline__date" datetime="2020/2024">2020 – 2024</time>
+              </div>
+              <p class="timeline__company">Universitas Diponegoro · Semarang</p>
+              <p class="timeline__impact">
+                IPK 3.72 / 4.00. Skripsi tentang optimasi performa rendering Jetpack Compose pada perangkat low-end. Aktif sebagai asisten dosen mata kuliah Pemrograman Mobile.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════
+         CONTACT SECTION
+    ═══════════════════════════ -->
+    <section id="contact" class="contact section-pad" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center">
+          <span class="section-label">05 / Contact</span>
+          <h2 id="contact-heading">Mari Terhubung</h2>
+          <p class="contact__subtitle">
+            Saya terbuka untuk posisi Junior/Mid Android Developer, internship lanjutan, atau kolaborasi proyek. Balas email saya biasanya dalam 24 jam.
+          </p>
+        </header>
+
+        <address class="contact__links">
+          <a href="mailto:najib@email.com" class="contact__link">
+            <span class="contact__link-icon" aria-hidden="true">✉</span>
+            <span>najib@email.com</span>
+          </a>
+          <a href="https://linkedin.com/in/najib" class="contact__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact__link-icon" aria-hidden="true">in</span>
+            <span>linkedin.com/in/najib</span>
+          </a>
+          <a href="https://github.com/najib" class="contact__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact__link-icon" aria-hidden="true">&lt;/&gt;</span>
+            <span>github.com/najib</span>
+          </a>
+        </address>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════
+       FOOTER
+  ═══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__text">
+        <span class="code-inline">© 2025 Najib Firmansyah</span>
+        &nbsp;·&nbsp; Dibangun dengan HTML5 + CSS3
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
